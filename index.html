@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>星光工具箱 - 正式版</title>
+    
+    <link rel="stylesheet" type="text/css" href="bdzyz/tycss.css" />
+    <script src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+   
+    <style type="text/css">
+    html {
+        background: #eee
+    }
+    </style>
+    
+    <style type="text/css">
+    	.button1 {
+    		border-radius: 13px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    	}
+    </style>
+    
+    <script type="text/javascript">
+        document.oncontextmenu = function(){ return false; };
+        document.onselectstart = function(){ return false; };
+        document.oncopy = function(){ return false; };
+        document.oncut = function(){ return false; };
+        document.onpaste = function(){ return false; };
+    </script>
+    
+   
+    
+    <script src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+    <!--<h1>Hello World!</h1>-->
+    <h1>星光工具箱 - 正式版</h1>
+    <p>欢迎来到星光工具箱！</p>
+    <p>&nbsp;</p>
+    <p>⭐当前版本&nbsp;&nbsp;<strong>星光工具箱 - 正式版本</strong></p>
+    <p>🎉公告 <strong>最近更新内容少，部分功能需要大家及时的刷新缓存以保证生效！</strong></p>
+    
+    <h4>&nbsp;&nbsp;⭐本站项目导航：</h4>
+    <p>&nbsp;</p>
+    
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class='button button1'><a href="导航.html"  title="">⭐星光导航页</a></button>
+    <p>&nbsp;</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class='button button1'><a href="音乐.html" title="">👉星光云音乐</a></button>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class='button button1'><a href="电影.html" target="_blank" title="">🎉星光电影院</a></button>
+    <p>&nbsp;</p>
+ 
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class='button button1'><a href="计算.html" title="">🎉星光计算器✨ </a></button></p>
+     
+     <p>&nbsp;</p>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class='button button1'><a href="资源.html"  title="">👉星光资源站⭐</a></button>
+    <p>&nbsp;</p>
+   <br>
+   <br>
+    <hr>
+    <strong>
+    <center>
+    
+        <span id="showsectime" style="color:#1e1e1e;"></span>
+        
+        <script type="text/javascript">
+        
+        function NewDate(str) { 
+        
+        str = str.split('-'); 
+        
+        var date = new Date(); 
+        
+        date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+        
+        date.setUTCHours(0, 0, 0, 0); 
+        
+        return date; 
+        
+        } 
+        
+        function showsectime() {
+        
+        var birthDay =NewDate("2021-10-3");
+        
+        var today=new Date();
+        
+        var timeold=today.getTime()-birthDay.getTime();
+        
+        var sectimeold=timeold/1000
+        
+        var secondsold=Math.floor(sectimeold);
+        
+        var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+        
+        var daysold=Math.floor(e_daysold);
+        
+        var e_hrsold=(daysold-e_daysold)*-24;
+        
+        var hrsold=Math.floor(e_hrsold);
+        
+        var e_minsold=(hrsold-e_hrsold)*-60;
+        
+        var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+        
+        document.getElementById("showsectime").innerHTML = "本站已正常运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+        
+        setTimeout(showsectime, 1000);
+        
+        }showsectime();
+        
+        </script>
+        </center>
+        </strong>
+        
+    </body>
+    
+    <h5 style="text-align: center;">©2020-2022 星光工具箱网页开发团队版权所有！</h5>
+			 
+</html>
